@@ -1,78 +1,73 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="es">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Registro de Usuario</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-  </head>
-  <body>
+</head>
+<body>
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div class="card shadow-sm" style="max-width: 900px; width: 100%; padding: 2rem;">
-    <h3 class="card-title text-center mb-4">Registrate</h3>
- <form class="row g-3">
-  <div class="col-md-4">
-    <label for="validationServer01" class="form-label">Nombres</label>
-    <input type="text" class="form-control" id="validationServer01" required>
-    
-  </div>
-  <div class="col-md-4">
-    <label for="validationServer02" class="form-label">Apellidos</label>
-    <input type="text" class="form-control " id="validationServer02"  required>
-  </div>
-  <div class="col-md-4">
-  <label for="fecha" class="form-label">Fecha de nacimiento</label>
-  <input type="date" class="form-control" id="fecha" name="fecha">
-</div>
-  <div class="col-md-4">
-    <label for="validationServerUsername" class="form-label">Usuario</label>
-    <div class="input-group has-validation">
-      <span class="input-group-text" id="inputGroupPrepend3">@</span>
-      <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-      
+            <h3 class="card-title text-center mb-4">Regístrate</h3>
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <label for="nombres" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="nombres" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="fecha" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="fecha" name="fecha" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="usuario" class="form-label">Usuario</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        <input type="text" class="form-control" id="usuario" aria-describedby="inputGroupPrepend3" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                    <input type="password" class="form-control" id="confirmPassword" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="nacionalidad" class="form-label">Nacionalidad</label>
+                    <input type="text" class="form-control" id="nacionalidad" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="0123456789" required>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Sexo</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" value="hombre" id="sexoHombre">
+                        <label class="form-check-label" for="sexoHombre">
+                            Hombre
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" value="mujer" id="sexoMujer" checked>
+                        <label class="form-check-label" for="sexoMujer">
+                            Mujer
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <label for="validationServer03" class="form-label">Contraseña</label>
-    <input type="password" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-  </div>
-   <div class="col-md-4">
-    <label for="validationServer03" class="form-label">Confirmar Contraseña</label>
-    <input type="password" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-  </div>
-  <div class="col-md-4">
-    <label for="validationServer03" class="form-label">Nacionalidad</label>
-    <input type="text" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-    
-  </div>
-  
-  <div class="col-md-4">
-    <label for="validationServer05" class="form-label">Telefono</label>
-    <input type="telefono" class="form-control" id="validationServer05" placeholder="0123456789" aria-describedby="validationServer05Feedback" required>
-  </div>
-    <div class="col-md-4">
-        <label for="validationServer04" class="form-label"> Sexo</label>
- <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-  <label class="form-check-label" for="checkDefault">
-    Hombre
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
-  <label class="form-check-label" for="checkChecked">
-    Mujer
-  </label>
-</div>
-</div>
-  
-  <div class="col-12">
-    <button class="btn btn-success" type="submit">Enviar</button>
-  </div>
-</form>
-</div>
-</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
